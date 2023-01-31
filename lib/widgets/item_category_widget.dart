@@ -20,7 +20,9 @@ class ItemCategoryWidget extends StatelessWidget {
         vertical: 10,
       ),
       decoration: BoxDecoration(
-        color: Color(0xff349DFD).withOpacity(0.15),
+        color: isSelected
+            ? Color(0xff349DFD).withOpacity(0.15)
+            : Color(0xffeeeeee).withOpacity(0.05),
         borderRadius: BorderRadius.circular(12),
       ),
       child: Row(
@@ -38,6 +40,7 @@ class ItemCategoryWidget extends StatelessWidget {
             text,
             style: TextStyle(
               fontWeight: FontWeight.w600,
+              color: isSelected ? Colors.black : Colors.black26,
             ),
           ),
         ],

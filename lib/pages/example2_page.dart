@@ -1,4 +1,5 @@
 import 'package:codigo6_ui/widgets/item_category_widget.dart';
+import 'package:codigo6_ui/widgets/item_recomendation_widget.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 
@@ -131,6 +132,9 @@ class Example2Page extends StatelessWidget {
                 ),
               ),
               //* fin de Category
+              SizedBox(
+                height: 14,
+              ),
               //* inicio de los iconos estilo ListView
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -155,6 +159,21 @@ class Example2Page extends StatelessWidget {
                 ),
               ),
               //* fin de los iconos estilo ListView
+              SizedBox(
+                height: 24,
+              ),
+              //* inicio de text Recomendation
+              Text(
+                "Recomendation",
+                style: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              //* fin de text Recomendation
+              //* inicio de las imágenes de los ListView Horizontal
+              ItemRecomendationWidget(),
+              //* fin de las imágenes de los ListView Horizontal
             ],
             //!Columna principal del scaffold
           ),
