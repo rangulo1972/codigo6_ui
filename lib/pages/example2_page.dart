@@ -1,4 +1,6 @@
+import 'package:codigo6_ui/widgets/item_category_widget.dart';
 import 'package:flutter/material.dart';
+// import 'package:flutter_svg/flutter_svg.dart';
 
 class Example2Page extends StatelessWidget {
   @override
@@ -123,9 +125,36 @@ class Example2Page extends StatelessWidget {
               //* Inicio de Category
               Text(
                 "Category",
-                style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600),
+                style: TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
               //* fin de Category
+              //* inicio de los iconos estilo ListView
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    ItemCategoryWidget(
+                      icon: "home",
+                      text: "House",
+                      isSelected: true,
+                    ),
+                    ItemCategoryWidget(
+                      icon: "city",
+                      text: "Hotel",
+                      isSelected: false,
+                    ),
+                    ItemCategoryWidget(
+                      icon: "house",
+                      text: "Aparment",
+                      isSelected: false,
+                    ),
+                  ],
+                ),
+              ),
+              //* fin de los iconos estilo ListView
             ],
             //!Columna principal del scaffold
           ),
