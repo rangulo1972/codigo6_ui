@@ -6,7 +6,7 @@ class ItemRecomendationWidget extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Container(
-      margin: EdgeInsets.only(
+      margin: const EdgeInsets.only(
         right: 12,
         bottom: 16.0,
         top: 4.0,
@@ -32,7 +32,7 @@ class ItemRecomendationWidget extends StatelessWidget {
             height: height * 0.17,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
-              image: DecorationImage(
+              image: const DecorationImage(
                 fit: BoxFit.cover,
                 image: NetworkImage(
                     "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"),
