@@ -1,3 +1,4 @@
+import 'package:codigo6_ui/widgets/item_recomendation2_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:codigo6_ui/widgets/item_category_widget.dart';
 import 'package:codigo6_ui/widgets/item_recomendation_widget.dart';
@@ -205,58 +206,10 @@ class Example2Page extends StatelessWidget {
                   height: 24,
                 ),
                 //* fin ---------------------------------
-                Container(
-                  color: Colors.red,
-                  child: Row(
-                    children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(12),
-                        child: Image.network(
-                          "https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-                          height: 76,
-                          width: 64,
-                          fit: BoxFit.cover,
-                        ),
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text("Padanaran House"),
-                          Row(
-                            children: [
-                              ...List.generate(
-                                  5,
-                                  (index) => const Icon(
-                                        Icons.star,
-                                        color: Colors.amber,
-                                      )),
-                              Text("5.0"),
-                            ],
-                          ),
-                          Row(
-                            children: const [
-                              Icon(
-                                Icons.location_on,
-                                color: Colors.black45,
-                                size: 14,
-                              ),
-                              Text(
-                                "Padamara, Jawa Tengah",
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  height: 1.1,
-                                  color: Colors.black45,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
+                ItemRecomendation2Widget(),
+                ItemRecomendation2Widget(),
+                ItemRecomendation2Widget(),
+                ItemRecomendation2Widget(),
               ],
               //!Columna principal del scaffold
             ),
