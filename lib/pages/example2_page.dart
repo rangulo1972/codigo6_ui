@@ -9,6 +9,8 @@ class Example2Page extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(
+            //* Para hacer que todos los widgets empiecen al inicio
+            crossAxisAlignment: CrossAxisAlignment.start,
             //! Columna principal del scaffold
             children: [
               //* Inicio Parte superior
@@ -83,6 +85,9 @@ class Example2Page extends StatelessWidget {
                 ],
               ),
               //* fin parte superior
+              const SizedBox(
+                height: 24.0,
+              ),
               //* Inicio Parte del buscador
               Container(
                 decoration: BoxDecoration(
@@ -112,6 +117,15 @@ class Example2Page extends StatelessWidget {
                 ),
               ),
               //* Fin parte del buscador
+              const SizedBox(
+                height: 24.0,
+              ),
+              //* Inicio de Category
+              Text(
+                "Category",
+                style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600),
+              ),
+              //* fin de Category
             ],
             //!Columna principal del scaffold
           ),
