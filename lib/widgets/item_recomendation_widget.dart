@@ -6,6 +6,11 @@ class ItemRecomendationWidget extends StatelessWidget {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Container(
+      margin: EdgeInsets.only(
+        right: 12,
+        bottom: 16.0,
+        top: 4.0,
+      ),
       //color: Colors.blue,
       padding: const EdgeInsets.all(12.0),
       decoration: BoxDecoration(
@@ -13,7 +18,7 @@ class ItemRecomendationWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(16.0),
         boxShadow: [
           BoxShadow(
-              color: Colors.black.withOpacity(0.04),
+              color: Colors.black.withOpacity(0.05),
               blurRadius: 12,
               offset: const Offset(4, 4)),
         ],
