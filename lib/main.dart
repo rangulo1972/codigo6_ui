@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:codigo6_ui/pages/example4_page.dart';
 import 'package:codigo6_ui/pages/example3_page.dart';
 import 'package:codigo6_ui/pages/example2_page.dart';
 import 'package:codigo6_ui/pages/example1_page.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           textTheme: GoogleFonts
               .poppinsTextTheme()), //! Pra acentralizar el tipo de fuente en toda la aplicación
-      home: Example3Page(),
+      home: Example4Page(),
     );
   }
 }
