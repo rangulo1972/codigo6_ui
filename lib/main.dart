@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           textTheme: GoogleFonts
               .poppinsTextTheme()), //! Pra acentralizar el tipo de fuente en toda la aplicación
-      home: Example4Page(),
+      home: Example2Page(),
     );
   }
 }

@@ -212,6 +212,48 @@ class Example2Page extends StatelessWidget {
                   ItemRecomendation2Widget(),
                   ItemRecomendation2Widget(),
                   ItemRecomendation2Widget(),
+                  //! Uso del degradient en una imagen de internet
+                  Container(
+                    width: double.infinity,
+                    height: 200,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(
+                          "https://images.pexels.com/photos/1390403/pexels-photo-1390403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                        ),
+                      ),
+                    ),
+                    child: Stack(children: [
+                      Container(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                              begin: Alignment.bottomCenter,
+                              end: Alignment.topCenter,
+                              colors: [
+                                Colors.black.withOpacity(0.6),
+                                Colors.transparent,
+                              ]),
+                        ),
+                      ),
+                      Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Text(
+                              "Deserunt non aliqua esse anim non sint esse anim sunt proident velit adipisicing nostrud. Cupidatat nostrud sunt reprehenderit elit fugiat consequat consectetur. Aliquip quis in nostrud est id mollit. Ad in anim deserunt excepteur dolor aute.",
+                            ),
+                            ElevatedButton(
+                              onPressed: () {},
+                              child: Text("Information"),
+                            )
+                          ]),
+                    ]),
+                  ),
+
+                  const SizedBox(
+                    height: 300,
+                  ),
                 ],
                 //!Columna principal del scaffold
               ),
