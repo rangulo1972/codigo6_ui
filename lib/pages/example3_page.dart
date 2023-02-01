@@ -129,6 +129,7 @@ class Example3Page extends StatelessWidget {
                 SizedBox(
                   height: height * 0.06,
                 ),
+                //* inicio de button Log in
                 SizedBox(
                   width: double.infinity,
                   height: 52.0,
@@ -143,6 +144,7 @@ class Example3Page extends StatelessWidget {
                     ),
                   ),
                 ),
+                //* fin de button Log in
                 SizedBox(
                   height: height * 0.04,
                 ),
