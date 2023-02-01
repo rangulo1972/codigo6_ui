@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 
 class CircleWidget extends StatelessWidget {
-  const CircleWidget({super.key});
+  //* creación de parámetros para hacer dinámico al círculo a crearse
+  double radius;
+  Color color;
+
+  CircleWidget({required this.radius, required this.color});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
-      width: 200,
+      height: radius * 2,
+      width: radius * 2,
       decoration: BoxDecoration(
-        color: Colors.amber,
+        color: color,
         shape: BoxShape.circle,
       ),
     );

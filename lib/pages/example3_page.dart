@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:codigo6_ui/widgets/circle_widget.dart';
 
 class Example3Page extends StatelessWidget {
-  const Example3Page({super.key});
-
   @override
   Widget build(BuildContext context) {
+    //! para tener referencia respecto a al altura de la pantalla de presentación
     double height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: Stack(children: [
@@ -14,9 +13,20 @@ class Example3Page extends StatelessWidget {
         Stack(
           children: [
             Positioned(
-              top: 20,
-              left: 40,
-              child: CircleWidget(),
+              top: -height * 0.28,
+              left: -height * 0.05,
+              child: CircleWidget(
+                radius: height * 0.2,
+                color: const Color(0xff35969D),
+              ),
+            ),
+            Positioned(
+              top: -height * 0.30,
+              right: -height * 0.17,
+              child: CircleWidget(
+                radius: height * 0.28,
+                color: const Color(0xff8AEC9E),
+              ),
             ),
             // Positioned(
             //   top: 20,
